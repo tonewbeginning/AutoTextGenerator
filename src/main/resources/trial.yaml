@@ -1,0 +1,15 @@
+#https://www.youtube.com/watch?v=cdLNKUoMc6c
+oneObject:
+  alive: true
+  solid: false
+  height: !!float 10
+  color: &chosenColor "pink"
+  location:
+    - earth
+    - canada
+    - surface
+  history:
+    - wasBorn: true
+      willDie: false
+      parent: "don't know"
+  newColorValue: *chosenColor

@@ -35,12 +35,13 @@ public class multiThreadingRunnable {
         });
         t1.start();
         t2.start();
-
+        System.out.println(t1.isAlive());
         // if you remove the join then bye will execute before
         // t1 and t2 even complete.
         t1.join();
         t2.join();
         System.out.println("bye");
+        System.out.println(t1.isAlive());
     }
 }
 

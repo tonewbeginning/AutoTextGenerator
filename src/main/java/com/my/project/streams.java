@@ -10,7 +10,7 @@ public class streams {
         // filter
         List<String> strings = Arrays.asList("abc", "", "bc", "efg", "abcd","", "jkl");
         List<String> filtered = strings.stream().filter(string -> !string.isEmpty()).collect(Collectors.toList());
-        filtered.toString(filtered.forEach(System.out::println);
+        filtered.forEach(System.out::println);
 
         // stats
         List numbers = Arrays.asList(3, 2, 2, 3, 7, 3, 5);
